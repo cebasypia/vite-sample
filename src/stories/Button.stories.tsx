@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/consistent-type-assertions */
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 

@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/await-thenable */
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { within, userEvent } from '@storybook/testing-library';
 import { Page } from './Page';
 
+// eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 export default {
   title: 'Example/Page',
   component: Page,

@@ -10,7 +10,12 @@
         "standard-with-typescript",
         "prettier"
     ],
-    "overrides": [],
+    "overrides": [
+        {
+            "files": "*.stories.@(ts|tsx|js)",
+            "extends": "plugin:storybook/recommended"
+        }
+    ],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -40,6 +45,10 @@
             }
         ],
         "react/react-in-jsx-scope": "off",
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "@typescript-eslint/consistent-type-definitions": [
+            "error",
+            "type"
+        ]
     }
 }
