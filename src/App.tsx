@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import reactLogo from './assets/react.svg';
 import './App.css';
 import { css } from '@emotion/react';
@@ -28,8 +29,41 @@ const App = (): JSX.Element => {
         </p>
       </div>
       <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
+      <h2>Welcome to React Router!</h2>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='about' element={<About />} />
+      </Routes>
     </div>
   );
 };
 
 export default App;
+
+const Home = (): JSX.Element => {
+  return (
+    <>
+      <main>
+        <h2>Welcome to the homepage!</h2>
+        <p>You can do this, I believe in you.</p>
+      </main>
+      <nav>
+        <Link to='/about'>About</Link>
+      </nav>
+    </>
+  );
+};
+
+const About = (): JSX.Element => {
+  return (
+    <>
+      <main>
+        <h2>Who are we?</h2>
+        <p>{"That feels like an existential question, don't you think?"}</p>
+      </main>
+      <nav>
+        <Link to='/'>Home</Link>
+      </nav>
+    </>
+  );
+};
