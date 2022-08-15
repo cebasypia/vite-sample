@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "fmt": "eslint --cache --fix \"src/**/*.{js,jsx,ts,tsx}\" && prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 NODE_OPTIONS=--openssl-legacy-provider",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
