@@ -1,28 +1,3 @@
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import githubMarkdownCss from '@/assets/github-markdown-css';
-
-import CodeBlock from '@/pages/CodeBlock';
-
-const MarkDown = (): JSX.Element => {
-  const components = {
-    code: CodeBlock,
-  };
-
-  return (
-    <>
-      <article css={githubMarkdownCss}>
-        <ReactMarkdown components={components} remarkPlugins={[remarkGfm]}>
-          {markdownText}
-        </ReactMarkdown>
-      </article>
-    </>
-  );
-};
-
-export default MarkDown;
-
-const markdownText = `
 # 見出し 1
 
 ## 見出し 2
@@ -83,17 +58,17 @@ _test_
 
 [侍エンジニア](https://www.sejuku.net/blog/)
 
-\`\`\`vb:test.vb
+```vb:test.vb
 Sub Test()
   MsgBox "こんにちは！"
 End Sub
-\`\`\`
+```
 
-\`\`\`js:test.js
+```js:test.js
 const test = () => {
   console.log("Hello, World!");
 };
-\`\`\`
+```
 
 > 引用したい文字
 
@@ -102,5 +77,3 @@ const test = () => {
 ---
 
 ---
-
-`;
