@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import App from './App';
-import About from './pages/About';
-import Home from './pages/Home';
-import MarkDown from './pages/MarkDown';
+import App from '@/App';
+import About from '@/pages/About';
+import Home from '@/pages/Home';
+import MarkDown from '@/pages/MarkDown';
 
 const Router = (): JSX.Element => {
   return (

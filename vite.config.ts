@@ -18,4 +18,12 @@ export default defineConfig({
   esbuild: {
     logOverride: { 'this-is-undefined-in-esm': 'silent' },
   },
+  resolve: {
+    alias: [
+      {
+        find: '@',
+        replacement: '/src',
+      },
+    ],
+  },
 });

@@ -50,5 +50,10 @@
             "error",
             "type"
         ]
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": []
+        }
     }
 }
