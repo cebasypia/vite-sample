@@ -594,7 +594,7 @@ const githubMarkdownCss = css`
     content: '';
   }
 
-  *:first-child {
+  :first-of-type {
     margin-top: 0 !important;
   }
 
@@ -634,7 +634,7 @@ const githubMarkdownCss = css`
     margin-bottom: 16px;
   }
 
-  blockquote > :first-child {
+  blockquote > :first-of-type {
     margin-top: 0;
   }
 
@@ -765,7 +765,7 @@ const githubMarkdownCss = css`
     border-top: 1px solid var(--color-border-muted);
   }
 
-  table tr:nth-child(2n) {
+  table tr:nth-of-type(2n) {
     background-color: var(--color-canvas-subtle);
   }
 
